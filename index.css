@@ -1,0 +1,223 @@
+/* FONT  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0; 
+  padding:0;
+  box-sizing: border-box; 
+}
+body{ 
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+nav{  
+    width: 100%;   
+    padding:20px 50px; 
+    align-items: center;
+    justify-content: space-between; 
+    position: sticky; 
+    z-index: 999;
+     background-color: rgba(0, 0, 0, 0.627);
+    /* background-color:lightgray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{ 
+  width: 10%; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 50%;
+}
+.logo h3{
+  font-size: 2rem;
+  font-weight: 600;
+}
+nav ul{ 
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav li{
+    height: 50px;  
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+nav a:hover{
+  background-color: black;
+    /* background-color:  #120b0bb4; */
+    color: white;
+    transition: all 0.5s ease-in-out;
+} 
+ /* HOME */
+  .Home{ 
+    text-align: center; 
+    background-image: url(assets/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .Home-cont1{
+  /* background-color: red; */
+  padding: 10px 0;
+ }
+.Btn{
+    background-color: #000000;
+    padding: 11px 25px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 5px
+}
+.Btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #000000;
+    transition: 0.5s ease-in-out;
+}
+.Home-cont{ 
+  padding: 40px ; 
+}
+.Home-cont h1{
+      font-size: 4rem; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+ 
+/* WAITLIST */
+.waitlist{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.waitlist h1{
+  padding: 20px 0;
+}
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;   
+     background-color: rgba(0, 0, 0, 0.627);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); 
+    padding:25px;
+    border-radius: 10px; 
+}
+form input{
+    /* background-color: yellow; */
+    padding: 11px 3px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid black;
+}
+form label{
+    /* color: darkblue; */
+    font-size: 15px ;
+    font-weight: 500;
+    padding: 5px 5px;
+    color: white;
+}
+form ::placeholder{
+    /* color: red; */
+        font-size: 10px ;
+    font-weight: 500;
+    padding: 0 5px;
+    border: none;
+}
+.btn1{
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 0;
+}
+
+
+/* MEDIA QUERY */
+/* @media only screen and (max-width:600px)  */
+@media only screen and (max-width: 900px){
+  body{
+      /* background-color: red; */
+  }
+  nav{
+    /* background-color: rebeccapurple; */
+    padding: 10px;
+    flex-direction: column; 
+    align-items: flex-start;
+    transition: 1s ease-in-out;
+  }
+.logo{ 
+  width: 20%;  
+}
+.logo img{
+  width: 60%;
+}
+.logo h3{
+  font-size: 2.5rem; 
+}
+nav ul{  
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+  
+
+/* WAITLIST */
+.waitlist{
+ 
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 50px;
+
+}
+form{
+    width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIUM SCREEN (LANDSCAPE TABLETS) */
